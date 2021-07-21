@@ -1,4 +1,4 @@
-from kivy.garden.mapview import MapView
+from kivy_garden.mapview import MapView
 from kivy.clock import Clock
 from kivy.app import App
 from marketmarker import MarketMarker
@@ -23,7 +23,7 @@ class FarmersMapView(MapView):
         sql_statement = "SELECT * FROM markets WHERE x > %s AND x < %s AND y > %s AND y < %s "%(min_lon, max_lon, min_lat, max_lat)
         app.cursor.execute(sql_statement)
         markets = app.cursor.fetchall()
-        print(markets)
+        # print(markets)
         for market in markets:
             name = market[1]
             if name in self.market_names:

@@ -1,4 +1,4 @@
-from kivy.garden.mapview import MapMarkerPopup
+from kivy_garden.mapview import MapMarkerPopup
 from locationpopupmenu import LocationPopupMenu
 
 
